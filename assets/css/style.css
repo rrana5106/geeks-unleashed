@@ -148,6 +148,11 @@ h2.ask-question {
 .option:active{
     background-color: #ffea00 !important;
 }
+
+.option.selected {
+  background-color: #e9ec14;
+  color: black;
+}
 @media screen and (min-width: 768px) {
 .option{ 
     width: 150px;
