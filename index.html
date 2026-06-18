@@ -3,7 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
   <!-- custom css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Geo Bites</title>
@@ -12,25 +17,25 @@
 <body>
   <header>
     <img id="logo" src="assets/images/logo.png" alt="logo">
-    <h1 class="heading">Geo Bites</h1>
+    <h1 class="heading lato-regular">Geo Bites</h1>
   </header>
 
   <main>
     <img class="flagImg" src="assets/images/flag.png" alt="flag">
-    <h2 class="ask-question mt-1">Guess the capital</h2> 
+    <h2 class="ask-question lato-regular mt-1">Guess the capital</h2> 
 
     <form class="multiple-choice mb-1">
-      <button class="option" type="button">London</button>
-      <button class="option" type="button">Paris</button>
-      <button class="option" type="button">Rome</button>
-      <button class="option" type="button">Sofia</button>
+      <button class="option lato-regular" type="button">London</button>
+      <button class="option lato-regular" type="button">Paris</button>
+      <button class="option lato-regular" type="button">Rome</button>
+      <button class="option lato-regular" type="button">Sofia</button>
     </form>
 
      <!--submit button-->
-    <button id="submit" class="mb-2" type="submit">Submit Answer</button>
+    <button id="submit" class="submit-btn mb-2 lato-regular" type="submit">Submit Answer</button>
 
      <!--answer box appears after-->
-    <div class="answerBox--wrapper mb-2">
+    <div class="answerBox--wrapper mb-2 lato-regular">
       <div id="answerBox">
         <h2>The answer is.......</h2>
         <p>United Kingdom</p>
