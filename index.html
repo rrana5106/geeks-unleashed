@@ -1,50 +1,45 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- custom css -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Document</title>
-</head>
+  <body>
+    <header>
+      <img id="logo" src="assets/images/logo.png" alt="logo" />
+      <h1>Geo Bites</h1>
+    </header>
 
-<body>
-  <header>
-    <img id="logo" src="assets/images/logo.png" alt="logo">
-    <h1>Geo Bites</h1>
-  </header>
-
-  <main>
-    <img id="flagImg" src="assets/images/flag.png" alt="flag">
-    <h2>Guess the capital</h2>
-    <!--Answer 1-->
-    <form>
+    <main>
+      <img id="flagImg" class="flagImg" src="./assets/images/flag.png" alt="flag" />
+      <h2>Guess the capital</h2>
       <!--Answer 1-->
-      <button class="answer" type="button">London</button>
-      <!--Answer 2-->
-      <button class="answer" type="button">Paris</button>
-      <!--Answer 3-->
-      <button class="answer" type="button">Rome</button>
-      <!--Answer 4-->
-      <button class="answer" type="button">Sofia</button>
+      <form>
+        <!--Answer 1-->
+        <button class="answer" type="button">London</button>
+        <!--Answer 2-->
+        <button class="answer" type="button">Paris</button>
+        <!--Answer 3-->
+        <button class="answer" type="button">Rome</button>
+        <!--Answer 4-->
+        <button class="answer" type="button">Sofia</button>
 
-      <button id="submit" type="submit">Submit Answer</button>
-    </form>
+        <button id="submit" type="submit" class="submit">Submit Answer</button>
+      </form>
 
-    <div>
-      <div id="answerBox">
-        <h2>The answer is.......</h2>
-        <p>United Kingdom</p>
+      <div>
+        <div id="answerBox" class="answerBox">
+          <h2>The answer is.......</h2>
+          <p>United Kingdom</p>
+        </div>
       </div>
-    </div>
+    </main>
 
-
-
-  </main>
-
-  <!-- js -->
-  <script src="./assets/js/script.js"></script>
-</body>
-
+    <!-- js -->
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
