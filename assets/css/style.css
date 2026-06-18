@@ -75,9 +75,7 @@ h2.ask-question {
     align-items: center;
     margin: 1em;
 }
-.option:hover{
 
-}
 @media screen and (min-width: 768px) {
 .option{ 
     width: 150px;
