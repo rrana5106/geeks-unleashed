@@ -87,15 +87,13 @@ body {
 header {
     text-align: center;
 }
-
-#logo {
-    width: 100px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    padding: 0;
+.logo{
+	aspect-ratio: 1.188;
+	clip-path: shape(from 100% 61.1%,curve to 98.29% 53.66% with 99.86% 60.49%/99.03% 55.4%,curve to 96.68% 49.15% with 97.36% 51.44%/97.61% 51.35%,curve to 89.71% 37.78% with 96.21% 48.04%/93.42% 42.19%,curve to 79.41% 26.72% with 82.23% 28.9%/80.51% 30.65%,curve to 61.72% 4.91% with 79.22% 26.04%/73.49% 11.91%,curve to 37.06% 0.84% with 59.94% 3.86%/49.77% -2.18%,curve to 3.34% 35.25% with 14.99% 6.08%/5.25% 28.46%,curve to 0.84% 65.9% with 3.09% 36.13%/-1.96% 49.26%,curve to 11.61% 87.15% with 2.03% 72.94%/6.18% 82.63%,curve to 9.85% 44.49% with 3.82% 64.94%/8.65% 51.06%,curve to 28.63% 86.9% with 11.16% 63.88%/17.23% 73.37%,curve to 43.46% 99.88% with 31.48% 90.3%/42.03% 99.77%,curve to 69.64% 92.26% with 58.09% 100.96%/66.25% 94.45%,curve to 58.91% 70.65% with 59.81% 78.36%/59.74% 71.64%,curve to 57.76% 64.91% with 58.86% 70.6%/57.81% 65.62%,curve to 59.58% 58.92% with 57.52% 61.51%/57.56% 61.32%,curve to 100% 61.1% with 63.18% 54.64%/81.32% 49.31%,close,move to 55.12% 83.65%,curve to 48.61% 77.27% with 49.4% 77.35%/49.08% 77.83%,curve to 25.71% 56.44% with 44.75% 72.69%/34.37% 66.72%,curve to 26.44% 20.73% with 24.59% 55.11%/12.41% 37.4%,curve to 43.46% 17.21% with 30.36% 16.07%/38.87% 14.49%,curve to 69.93% 29.57% with 54.7% 23.89%/58.1% 29.27%,curve to 44.67% 20.91% with 61.86% 35.74%/51.85% 26.56%,curve to 51.16% 28.44% with 48.69% 26.74%/49.59% 26.83%,curve to 60.1% 33.15% with 46.94% 36.84%/57.96% 43.31%,curve to 61.25% 34.26% with 60.12% 33.08%/61.55% 32.15%,curve to 49.75% 37.6% with 60.09% 42.53%/51.49% 41.73%,curve to 48.5% 35.25% with 49.23% 36.35%/49.04% 36.54%,curve to 34.77% 22.71% with 47.45% 32.75%/44.53% 23.19%,curve to 43.14% 28.52% with 36.77% 23.45%/40.36% 24.26%,curve to 26.03% 26.59% with 35.26% 21.96%/26.44% 26.43%,curve to 45.69% 47.86% with 44.45% 27.16%/44% 43.84%,curve to 54.22% 57.93% with 48.01% 53.36%/50.25% 55.73%,curve to 55.12% 83.65% with 53.07% 59.47%/47.26% 67.22%,close,close,move to 54.9% 32.53%,curve to 55.47% 31.11% with 53.36% 32.53%/54.36% 29.79%,curve to 54.9% 32.53% with 55.61% 31.27%/55.91% 32.53%,close,move to 76.82% 31.1%,curve to 82.11% 35.37% with 76.87% 31.17%/81.49% 34.63%,curve to 86.8% 40.07% with 84.29% 37.96%/84.62% 37.49%,curve to 95.17% 54.16% with 87.62% 41.05%/92.68% 47.06%,curve to 68.27% 38.67% with 88.28% 46.88%/83.05% 41.3%,curve to 75.52% 36.61% with 68.85% 38.54%/68.78% 38.3%,curve to 76.82% 31.1% with 76.03% 34.3%/76.04% 34.34%,close,move to 52.92% 35.44%,curve to 52.72% 34.14% with 52.92% 35.29%/52.14% 34.83%,curve to 53.86% 34.26% with 53.37% 33.36%/53.56% 34.62%,curve to 57.4% 32.97% with 54.22% 33.84%/55.04% 35.76%,curve to 58.23% 32.41% with 57.52% 32.82%/57.49% 31.97%,curve to 53.5% 35.93% with 59.51% 33.17%/57.17% 38.11%,curve to 52.92% 35.44% with 53.45% 35.9%/52.92% 35.59%,close,close,close,close,move to 57.8% 42.04%,curve to 76.34% 43.1% with 59.27% 41.74%/68.21% 39.88%,curve to 92.05% 52.61% with 77.75% 43.66%/85.73% 46.61%,curve to 61.87% 46.5% with 87.22% 50.85%/81.2% 45.78%,curve to 73.37% 44.27% with 70.82% 43.84%/74.29% 44.43%,curve to 57.8% 42.04% with 63.87% 42.66%/63.94% 42.31%,close,close);
+    background-color: white;
+    width: 70px;
+    margin: 1em auto 0;
 }
-
 h1.heading {
     font-size: 4rem;/* fonts use rem for mobile*/
     color: var(--font-color-white);
@@ -170,10 +168,7 @@ h2.ask-question {
 .submit-btn:hover {
     background-color: #b5ff79;
 }
-/* Added a wrapper to display none on initial load */
-/* .answerBox--wrapper{
-    display: none;
-} */
+
 .answerBox--wrapper{
     display: flex;
     justify-content: center;
