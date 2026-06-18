@@ -1,5 +1,21 @@
+/*----------------------
+GLOBAL STYLES
+-----------------------*/
+
+:root{
+    --font-color-white:#FFF;
+    --font-color-black:#FFF;
+}
+.mt-1{margin-top: 1em;}
+.mb-1{margin-bottom: 1em;}
+.mt-2{margin-top: 2em;}
+.mb-2{margin-bottom: 2em;}
+/*----------------------
+START OF PAGE
+-----------------------*/
 body {
-    background-color: #312205;
+    background-color: #222222;/*colour change*/
+    text-align: center;/*centering all content*/
 }
 
 header {
@@ -12,18 +28,16 @@ header {
     display: block;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: -10px;
 }
 
-h1 {
-    font-family: sans-serif;
-    font-size: 50px;
-    color: white;
-    margin-top: -10px;
-    margin-bottom: 0;
+h1.heading {
+    font-size: 4rem;/* fonts use rem for mobile*/
+    color: var(--font-color-white);
+    line-height: normal;/* fix */
+    margin: 0;
 }
 
-#flagImg {
+.flagImg {
     height: 200px;
     width: auto;
     display: block;
@@ -33,35 +47,42 @@ h1 {
 }
 
 
-h2 {
-    font-family: sans-serif;
-    font-size: 30px;
+h2.ask-question {
+    font-size: 2rem;/* fonts use rem for mobile*/
     text-align: center;
-    color: white;
+    color: var(--font-color-white);
 }
-
-form {
+.multiple-choice{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    max-width: 700px;
-    margin: 0 auto;
+    align-items: center;
+    padding: 0;/*removes padding added on unordered lists*/
+    flex-flow: row wrap;
 }
-
-.answer {
-    font-family: sans-serif;
-    font-size: 20px;
+.option{
+    font-size: 1rem;/* fonts use rem for mobile*/
     text-align: center;
+    display: flex;
     font-weight: bold;
-    color: white;
+    color: var(--font-color-white);
     background-color: black;
     height: 75px;
     width: 150px;
     border: 1px solid white;
     border-radius: 10px;
+    width: 38%;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
 }
+.option:hover{
 
+}
+@media screen and (min-width: 768px) {
+.option{ 
+    width: 150px;
+}
+}
 #submit {
     font-family: sans-serif;
     font-size: 20px;
@@ -72,6 +93,10 @@ form {
     width: 250px;
     border-radius: 10px;
 }
+/* Added a wrapper to display none on initial load */
+.answerBox--wrapper{
+    display: none;
+}
 
 #answerBox {
     display: flex;
@@ -80,19 +105,17 @@ form {
     align-items: center;
     text-align: center;
     height: 100px;
-    width: 350px;
+    width: auto;
+    max-width: 375px;
     border: solid 2px #e9ec14;
-    margin: 30px auto;
+    margin: 0 auto;
     border-radius: 10px;
-    padding-top: 10px;
 }
 
 #answerBox h2 {
-    font-family: sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
-    color: white;
-    margin: 0 0 10px 0;
+    color: var(--font-color-white);
 }
 
 
@@ -100,7 +123,7 @@ form {
     font-family: sans-serif;
     font-size: 30px;
     text-align: center;
-    color: white;
-    padding-bottom: 20px;
+    color: var(--font-color-white);
     margin: 0;
 }
+

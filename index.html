@@ -6,40 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- custom css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <title>Document</title>
+  <title>Geo Bites</title>
 </head>
 
 <body>
   <header>
     <img id="logo" src="assets/images/logo.png" alt="logo">
-    <h1>Geo Bites</h1>
+    <h1 class="heading">Geo Bites</h1>
   </header>
 
   <main>
-    <img id="flagImg" src="assets/images/flag.png" alt="flag">
-    <h2>Guess the capital</h2>
-    <!--Answer 1-->
-    <form>
-      <!--Answer 1-->
-      <button class="answer" type="button">London</button>
-      <!--Answer 2-->
-      <button class="answer" type="button">Paris</button>
-      <!--Answer 3-->
-      <button class="answer" type="button">Rome</button>
-      <!--Answer 4-->
-      <button class="answer" type="button">Sofia</button>
+    <img class="flagImg" src="assets/images/flag.png" alt="flag">
+    <h2 class="ask-question mt-1">Guess the capital</h2>
 
-      <button id="submit" type="submit">Submit Answer</button>
+    <form class="multiple-choice mb-1">
+      <button class="option" type="button">London</button>
+      <button class="option" type="button">Paris</button>
+      <button class="option" type="button">Rome</button>
+      <button class="option" type="button">Sofia</button>
     </form>
 
-    <div>
+     <!--submit button-->
+    <button id="submit" class="mb-2" type="submit">Submit Answer</button>
+
+     <!--answer box appears after-->
+    <div class="answerBox--wrapper mb-2">
       <div id="answerBox">
         <h2>The answer is.......</h2>
         <p>United Kingdom</p>
       </div>
     </div>
-
-
 
   </main>
 
