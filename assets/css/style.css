@@ -1,5 +1,87 @@
+
+/*----------------------
+CUSTOM FONT
+-----------------------*/
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*----------------------
+GLOBAL STYLES
+-----------------------*/
+*{
+    margin: 0;
+}
+:root{
+    --font-color-white:#FFF;
+    --font-color-black:#000;
+}
+.mt-1{margin-top: 1em;}
+.mb-1{margin-bottom: 1em;}
+.mt-2{margin-top: 2em;}
+.mb-2{margin-bottom: 2em;}
+/*----------------------
+START OF PAGE
+-----------------------*/
 body {
-    background-color: #312205;
+    background-color: #222222;/*colour change*/
+    text-align: center;/*centering all content*/
 }
 
 header {
@@ -12,18 +94,16 @@ header {
     display: block;
     margin: 0 auto;
     padding: 0;
-    margin-bottom: -10px;
 }
 
-h1 {
-    font-family: sans-serif;
-    font-size: 50px;
-    color: white;
-    margin-top: -10px;
-    margin-bottom: 0;
+h1.heading {
+    font-size: 4rem;/* fonts use rem for mobile*/
+    color: var(--font-color-white);
+    line-height: normal;/* fix */
+    margin: 0;
 }
 
-#flagImg {
+.flagImg {
     height: 200px;
     width: auto;
     display: block;
@@ -33,44 +113,70 @@ h1 {
 }
 
 
-h2 {
-    font-family: sans-serif;
-    font-size: 30px;
+h2.ask-question {
+    font-size: 2rem;/* fonts use rem for mobile*/
     text-align: center;
-    color: white;
+    color: var(--font-color-white);
 }
-
-form {
+.multiple-choice{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-    max-width: 700px;
-    margin: 0 auto;
+    align-items: center;
+    padding: 0;/*removes padding added on unordered lists*/
+    flex-flow: row wrap;
 }
-
-.answer {
-    font-family: sans-serif;
-    font-size: 20px;
+.option{
+    font-size: 1rem;/* fonts use rem for mobile*/
     text-align: center;
-    font-weight: bold;
-    color: white;
+    display: flex;
+    color: var(--font-color-white);
     background-color: black;
     height: 75px;
     width: 150px;
     border: 1px solid white;
     border-radius: 10px;
+    width: 38%;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
 }
 
-#submit {
+.option:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #ffffff;
+    color: var(--font-color-black);
+}
+.option:active{
+    background-color: #ffea00 !important;
+}
+@media screen and (min-width: 768px) {
+.option{ 
+    width: 150px;
+}
+}
+.submit-btn {
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
     background-color: white;
     color: black;
     height: 50px;
     width: 250px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #b5ff79;
+}
+/* Added a wrapper to display none on initial load */
+/* .answerBox--wrapper{
+    display: none;
+} */
+.answerBox--wrapper{
+    display: flex;
+    justify-content: center;
 }
 
 #answerBox {
@@ -79,28 +185,25 @@ form {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100px;
-    width: 350px;
+    height: auto;
+    width: auto;
     border: solid 2px #e9ec14;
-    margin: 30px auto;
+    margin: 0 2em;
     border-radius: 10px;
-    padding-top: 10px;
+    padding: 1em 3em;
+    max-width: 600px;
 }
 
 #answerBox h2 {
-    font-family: sans-serif;
-    font-size: 30px;
+    font-size: 1rem;
     text-align: center;
-    color: white;
-    margin: 0 0 10px 0;
+    color: var(--font-color-white);
 }
 
 
 #answerBox p {
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
-    color: white;
-    padding-bottom: 20px;
-    margin: 0;
+    color: var(--font-color-white);
 }

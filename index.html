@@ -1,45 +1,51 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- custom css -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <header>
-      <img id="logo" src="assets/images/logo.png" alt="logo" />
-      <h1>Geo Bites</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <!-- custom css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Geo Bites</title>
+</head>
 
-    <main>
-      <img id="flagImg" class="flagImg" src="./assets/images/flag.png" alt="flag" />
-      <h2>Guess the capital</h2>
-      <!--Answer 1-->
-      <form>
-        <!--Answer 1-->
-        <button class="answer" type="button">London</button>
-        <!--Answer 2-->
-        <button class="answer" type="button">Paris</button>
-        <!--Answer 3-->
-        <button class="answer" type="button">Rome</button>
-        <!--Answer 4-->
-        <button class="answer" type="button">Sofia</button>
+<body>
+  <header>
+    <img id="logo" src="assets/images/logo.png" alt="logo">
+    <h1 class="heading lato-regular">Geo Bites</h1>
+  </header>
 
-        <button id="submit" type="submit" class="submit">Submit Answer</button>
-      </form>
+  <main>
+    <img class="flagImg" src="assets/images/flag.png" alt="flag">
+    <h2 class="ask-question lato-regular mt-1">Guess the capital</h2> 
 
-      <div>
-        <div id="answerBox" class="answerBox">
-          <h2>The answer is.......</h2>
-          <p>United Kingdom</p>
-        </div>
+    <form class="multiple-choice mb-1">
+      <button class="option lato-regular" type="button">London</button>
+      <button class="option lato-regular" type="button">Paris</button>
+      <button class="option lato-regular" type="button">Rome</button>
+      <button class="option lato-regular" type="button">Sofia</button>
+    </form>
+
+     <!--submit button-->
+    <button id="submit" class="submit-btn mb-2 lato-regular" type="submit">Submit Answer</button>
+
+     <!--answer box appears after-->
+    <div class="answerBox--wrapper mb-2 lato-regular">
+      <div id="answerBox">
+        <h2>The answer is.......</h2>
+        <p>United Kingdom</p>
       </div>
-    </main>
+    </div>
 
-    <!-- js -->
-    <script src="./assets/js/script.js"></script>
-  </body>
+  </main>
+
+  <!-- js -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
 </html>
