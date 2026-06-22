@@ -100,12 +100,12 @@ const APIkey = "rc_live_9c23ef7629df4055a2c031dcdc3b9f39";
 // Load country data
 function loadQuestion() {
 
-  //  fetch("https://api.restcountries.com/countries/v5?limit=100", {
-  //   headers: {
-  //     Authorization: "Bearer " + APIkey,
-  //   },
-  // })
-  fetch("./data/countries.json")
+   fetch("https://api.restcountries.com/countries/v5?limit=100", {
+    headers: {
+      Authorization: "Bearer " + APIkey,
+    },
+  })
+  // fetch("./data/countries.json")
     .then((response) => response.json())
     .then((data) => {
       countries = [];
