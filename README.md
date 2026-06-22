@@ -1,138 +1,183 @@
-# GitHub Team Workflow Guide
+# 🌍 Geo Bites
 
-## 1. Clone the Repository
+Geo Bites is a fun geography quiz game that challenges users to identify the capital city of a country based on its flag.
 
-```bash
-git clone <repository-url>
-cd <repository-name>
+The application randomly displays a country's flag and provides four possible capital cities. Players select an answer and receive immediate feedback before moving on to the next question.
+
+---
+
+## 📸 Features
+
+* 🏳️ Display a random country flag
+* ❓ Multiple-choice capital city quiz
+* ✅ Highlight selected answer
+* 🎉 Immediate feedback after submitting
+* 🔄 Automatically load the next question
+* 📁 Uses local JSON data
+* 📱 Responsive design
+
+---
+
+## 🛠 Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* Fetch API
+* JSON
+
+---
+
+## 📂 Project Structure
+
+```text
+.
+├── index.html
+├── assets
+│   ├── css
+│   │   └── style.css
+│   ├── js
+│   │   └── script.js
+│   └── images
+│       └── flag.png
+├── data
+│   └── countries.json
+└── README.md
 ```
 
 ---
 
-## 2. Create Your Branch
+## 🚀 Getting Started
 
-Always create your own branch before starting work.
+### Clone the Repository
 
 ```bash
-git checkout -b feature-your-task
+git clone https://github.com/rrana5106/geeks-unleashed.git
 ```
+
+### Navigate into the Project
+
+```bash
+cd geo-bites
+```
+
+### Run the Project
+
+Open the project using VS Code Live Server or any local development server.
 
 Example:
 
-```bash
-git checkout -b feature-login-page
+```text
+http://127.0.0.1:5500
 ```
 
 ---
 
-## 3. Make Your Changes
+## 🎮 How to Play
 
-Edit files and save your work.
+1. A country's flag is displayed.
+2. Four capital city options are presented.
+3. Select your answer.
+4. Click **Submit Answer**.
+5. Receive feedback:
 
-Check your changes:
-
-```bash
-git status
-```
-
----
-
-## 4. Commit Your Changes
-
-Add files:
-
-```bash
-git add .
-```
-
-Commit them:
-
-```bash
-git commit -m "Added login page"
-```
+   * ✅ Correct answer
+   * ❌ Incorrect answer with the correct capital displayed
+6. A new question loads automatically after two seconds.
 
 ---
 
-## 5. Push Your Branch
+## 🧠 Game Logic
 
-```bash
-git push -u origin feature-your-task
-```
-
-Example:
-
-```bash
-git push -u origin feature-login-page
-```
+* Country data is loaded from `countries.json`.
+* Countries without capitals are ignored.
+* One country is randomly selected.
+* The correct capital is added to the options.
+* Three random capitals are added as incorrect answers.
+* Answer choices are shuffled before display.
 
 ---
 
-## 6. Create a Pull Request (PR)
+## 🔒 Security
 
-1. Open the repository on GitHub.
-2. Click **Compare & Pull Request**.
-3. Add a title and description.
-4. Click **Create Pull Request**.
+To avoid exposing API keys in the frontend, country data is stored locally in `countries.json`.
 
----
+This makes the application:
 
-## 7. Review and Merge
-
-* Team members review the Pull Request.
-* Make any requested changes.
-* After approval, merge the Pull Request into `main`.
+* Faster
+* More secure
+* Easier to deploy
+* Independent of third-party API limits
 
 ---
 
-## 8. Get the Latest Changes
+## 📋 Future Improvements
 
-Before starting a new task:
+* [ ] Score counter
+* [ ] Difficulty levels
+* [ ] Timer countdown
+* [ ] High score leaderboard
+* [ ] Dark mode
+* [ ] Sound effects
+* [ ] Progress indicator
+* [ ] Multiple rounds
+* [ ] Restart button
+* [ ] Support for all countries
+
+---
+
+## 🤝 Team Workflow
+
+### Create a Branch
 
 ```bash
-git checkout main
-git pull origin main
-```
-
-Then create a new branch:
-
-```bash
-git checkout -b feature-new-task
-```
-
----
-
-## Team Rules
-
-✅ Create a new branch for every task.
-
-✅ Commit often with clear messages.
-
-✅ Create a Pull Request before merging.
-
-✅ Review teammates' Pull Requests.
-
-❌ Do not work directly on the `main` branch.
-
-❌ Do not merge your own code without review.
-
----
-
-## Quick Reference
-
-```bash
-# Create branch
 git checkout -b feature-name
-
-# Add changes
-git add .
-
-# Commit changes
-git commit -m "Your message"
-
-# Push branch
-git push -u origin feature-name
-
-# Update main branch
-git checkout main
-git pull origin main
 ```
+
+### Commit Changes
+
+```bash
+git add .
+git commit -m "Add feature"
+```
+
+### Push Branch
+
+```bash
+git push origin feature-name
+```
+
+### Create a Pull Request
+
+Review the changes and merge into the `main` branch.
+
+---
+
+## 📚 Learning Objectives
+
+This project was created to practice:
+
+* Fetch API
+* DOM Manipulation
+* Event Listeners
+* Arrays and Objects
+* Randomization
+* Conditional Logic
+* Error Handling
+* Responsive Web Design
+* Git and GitHub Collaboration
+
+---
+
+## 👨‍💻 Authors
+
+Built collaboratively as a team project.
+
+- geek-unleashed
+    - JudithKnight123 (https://github.com/JudithKnight123)
+    - MelodySpring (https://github.com/MelodySpring)
+    - rrana5106 (https://github.com/rrana5106)
+
+---
+
+### Happy Coding! 🚀
